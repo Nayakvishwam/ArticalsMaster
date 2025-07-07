@@ -15,3 +15,8 @@ Installation steps
 4) After it node ./backend/importData.js.
 5) npm run start for backend api.
 6) npm run dev for ui.
+7) Add ./backend/env file details from your side.
+
+For ai use:- https://aistudio.google.com/
+
+Gemini 2.5 always implement for summary generate.
