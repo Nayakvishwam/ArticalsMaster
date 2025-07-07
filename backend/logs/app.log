@@ -2,3 +2,9 @@ info: Email sent successfully for task ID 1: <66002dd4-37e4-ec92-fa66-d777716979
 info: Email sent successfully for task ID 1: <444da4ca-5a77-4d76-2b4c-39829daf5b93@gmail.com> {"timestamp":"2025-07-07T11:24:50.696Z"}
 info: Email sent successfully for task ID 1: <73d850c9-d486-a620-4893-c0599195950d@gmail.com> {"timestamp":"2025-07-07T11:25:58.649Z"}
 info: Email sent successfully for task ID 1: <497d1649-7348-5250-ce13-dc89db6e5815@gmail.com> {"timestamp":"2025-07-07T11:26:41.477Z"}
+error: Running error: SequelizeDatabaseError: relation "public.services" does not exist {"timestamp":"2025-07-07T13:34:59.193Z"}
+error: Worker error: SequelizeConnectionError: read ECONNRESET {"timestamp":"2025-07-07T13:36:52.191Z"}
+error: Worker exited with code 1 {"timestamp":"2025-07-07T13:36:52.311Z"}
+info: Email sent successfully for task ID 1: <42132340-e8bc-3fe6-ab11-c79bc7a0a80b@gmail.com> {"timestamp":"2025-07-07T15:28:33.727Z"}
+info: Email sent successfully for task ID 2: <9c3b8dd0-3a4f-37c2-c823-2af6d5330445@gmail.com> {"timestamp":"2025-07-07T15:29:23.152Z"}
+info: Email sent successfully for task ID 3: <4ee547d1-b71f-07e0-643b-7945a343eeb3@gmail.com> {"timestamp":"2025-07-07T15:32:49.373Z"}

@@ -29,8 +29,8 @@ const app = express();
 })();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ limit: '50mb' }));
-app.use('/', allRoutes);
 app.use(cors());
+app.use('/', allRoutes);
 app.listen(PORT, async () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
