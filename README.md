@@ -16,6 +16,8 @@ Installation steps
 5) npm run start for backend api.
 6) npm run dev for ui.
 7) Add ./backend/env file details from your side.
+8) Mail sending based on the event driven architecture from technical side
+<img src="./docs/mailSenderEventArchitecture.png"/>
 
 For ai use:- https://aistudio.google.com/
 
