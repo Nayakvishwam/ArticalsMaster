@@ -15,6 +15,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@netlify/next": "^1.4.9",
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
   }
