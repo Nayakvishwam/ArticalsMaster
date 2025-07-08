@@ -1,9 +1,12 @@
+import Layout from "@/components/Layout";
 import Autherization from "../../components/Autherization";
 
 export default function AppLayout({ children }) {
     return (<>
-        <Autherization>
-            {children}
-        </Autherization>
+        <Layout>
+            <Autherization>
+                {children}
+            </Autherization>
+        </Layout>
     </>)
 };
