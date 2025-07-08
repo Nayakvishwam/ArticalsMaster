@@ -5,9 +5,9 @@ export function domainName() {
     return window.location.origin;
 };
 
-const isLocal = true
+const isLocal = false
 
-const apiUrl = isLocal ? "http://localhost:4000" : ""
+const apiUrl = isLocal ? "http://localhost:4000" : "https://vibrant-fascination-production-aac9.up.railway.app"
 
 export const apis = {
     Urls: {
