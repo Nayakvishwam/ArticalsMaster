@@ -1,5 +1,5 @@
 const { models } = require("../config/dbConnection");
-const { hashPassword, decryptValue, encryptValue, getCurrentDate } = require("../utils/utils");
+const { hashPassword, decryptValue, encryptValue, getCurrentDate, verifyToken } = require("../utils/utils");
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
@@ -89,7 +89,31 @@ async function verifyEmail(req, res) {
         res.status(500).json({ message: 'Internal server error', status: "error" });
     }
 };
-
+const validateUser = async (req, res) => {
+    try {
+        let { authorization } = req.headers;
+        let token = authorization;
+        token = token.slice(7, token.length).trimLeft();
+        if (!token) {
+            return res.status(401).json({ message: 'Invalid credentials', "status": "error" });
+        };
+        let data = verifyToken(token);
+        if (data) {
+            let count = await models.users.count({ where: { id: data.id } });
+            if (count == 0) {
+                return res.status(401).json({ message: 'Invalid credentials', "status": "error" });
+            }
+            return res.status(200).json({ message: "Valid user!", "status": "success" });
+        } else {
+            return res.status(401).json({
+                status_code: "error",
+                message: "Not allowed for access"
+            });
+        }
+    } catch (err) {
+        return res.status(500).json({ message: 'Internal server error', "status": "error" });
+    }
+}
 async function login(req, res) {
     try {
         const { email, password } = req.body;
@@ -129,5 +153,6 @@ async function login(req, res) {
 module.exports = {
     registerUser,
     verifyEmail,
-    login
+    login,
+    validateUser
 };

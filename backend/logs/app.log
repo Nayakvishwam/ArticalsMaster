@@ -1,6 +1,0 @@
-info: Email sent successfully for task ID 1: <66002dd4-37e4-ec92-fa66-d7777169796c@gmail.com> {"timestamp":"2025-07-07T11:21:44.352Z"}
-info: Email sent successfully for task ID 1: <444da4ca-5a77-4d76-2b4c-39829daf5b93@gmail.com> {"timestamp":"2025-07-07T11:24:50.696Z"}
-info: Email sent successfully for task ID 1: <73d850c9-d486-a620-4893-c0599195950d@gmail.com> {"timestamp":"2025-07-07T11:25:58.649Z"}
-info: Email sent successfully for task ID 1: <497d1649-7348-5250-ce13-dc89db6e5815@gmail.com> {"timestamp":"2025-07-07T11:26:41.477Z"}
-error: Running error: SequelizeHostNotFoundError: getaddrinfo ENOTFOUND postgres.railway.internal {"timestamp":"2025-07-08T08:03:24.991Z"}
-error: Running error: SequelizeDatabaseError: relation "public.services" does not exist {"timestamp":"2025-07-08T08:05:47.132Z"}
