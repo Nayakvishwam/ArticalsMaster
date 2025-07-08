@@ -1,11 +1,10 @@
 const { Sequelize } = require('sequelize');
 let { development } = require("./config.json");
 const { initModels } = require('../models/init-models');
-const sequelize = new Sequelize(development.database, development.username, development.password, {
-    host: development.host,
-    dialect: development.dialect,
+const sequelize = new Sequelize('postgresql://postgres:gDMJiwWVPnNGDqKwyDEQWbOpndSnCCdX@shortline.proxy.rlwy.net:59353/railway', {
+    dialect: 'postgres',
+    protocol: 'postgres',
     logging: false,
-    port: development.port,
     pool: {
         max: 5, // Limit max connections
         min: 0,

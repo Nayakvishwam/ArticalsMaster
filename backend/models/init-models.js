@@ -5,8 +5,8 @@ let _emailTasks = require("./emailTasks");
 let _mailsmaster = require("./mailsmaster");
 
 function initModels(sequelize) {
-  let users = _users(sequelize, DataTypes);
   let services = _services(sequelize, DataTypes);
+  let users = _users(sequelize, DataTypes);
   let emailTasks = _emailTasks(sequelize, DataTypes);
   let mailsmaster = _mailsmaster(sequelize, DataTypes);
 
